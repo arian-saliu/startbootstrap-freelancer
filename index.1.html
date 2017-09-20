@@ -2,14 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script>
-            $(document).ready(function() {
-        $("#page-top").fadeIn("slow");
-        });
-    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +43,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top"><i class="glyphicon glyphicon-home white"></i></a>
+                <a class="navbar-brand" href="#page-top">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,16 +53,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Clients</a>
+                        <a href="#portfolio">Partners</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -79,20 +69,15 @@
     </nav>
 
     <!-- Header -->
-    <header id="header">
+    <header>
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" id="logo" src="img/logo.png" width="50%" height="50%" alt="">
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/logo.png" alt="">
                     <div class="intro-text">
                         <h1 class="name"></h1>
-                        <span class="skills">We provide consulting and solution design for the following areas: Web Development, Cloud Architecture & Implementation, Automation of Business Processes. We especially pride ourselves with our flexibility, excellent quality and fast delivery of our solutions.  </span>
-                       <!-- <hr class="star-light"> -->
+                        <hr class="star-light">
+                        <span class="skills">Web Development and Cloud Architecture</span>
                     </div>
                 </div>
             </div>
@@ -104,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Clients</h2>
+                    <h2>Portfolio</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -116,11 +101,59 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/wirecard.png" class="img-responsive" alt="Cabin">
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
                     </a>
                 </div>
-                
-                
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -135,13 +168,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Our Stack</h3>
-                    <br>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                       <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,2,3,4" href="https://embed.stackshare.io/stacks/embed/f79b25119868160d480a99ebe52e82"/></a>
-                     </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -213,7 +250,7 @@
                             <br>Deutschland</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Find Us</h3>
+                        <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <!--<li>
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
@@ -480,9 +517,6 @@
             </div>
         </div>
     </div>
-    
-    <!-- stackshare.io -->
-    <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
