@@ -74,6 +74,9 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.img-custom {
+  margin: 10 auto;
+}
 header {
   text-align: center;
   border-bottom-style: solid; 
